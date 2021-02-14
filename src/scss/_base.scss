@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark {
+  --text-color: #f2f9fd;
+  --cards-color: hsl(209, 23%, 22%);
+  --background: hsl(207, 26%, 17%);
+  --input-color: white;
+  --sort-button-bg: rgba(43, 57, 69, 0.9);
+  --card-property-value: #c5cfd8;
+}
+
+.light {
+  --text-color: hsl(200, 15%, 8%);
+  --cards-color: white;
+  --background: hsl(0, 0%, 98%);
+  --input-color: hsl(0, 0%, 52%);
+  --sort-button-bg: var(--cards-color);
+  --card-property-value: var(--text-color);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-wrapper {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
